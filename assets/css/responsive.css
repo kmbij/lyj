@@ -1,0 +1,86 @@
+/* -------- 手機版（寬度小於768px）-------- */
+@media (max-width: 767px) {
+  /* 讓欄位變成一欄排列 */
+  .row.gtr-150 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-6, .col-12-medium {
+    width: 100% !important;
+    padding: 10px 0;
+  }
+
+  /* 縮小標題字體 */
+  #header h1 {
+    font-size: 1.5em;
+  }
+
+  /* 漢堡按鈕大小 */
+  #menuToggle {
+    font-size: 1.2em;
+    padding: 8px 12px;
+  }
+
+  /* 選單樣式調整 */
+  #navMenu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 90%;
+  }
+
+  #navMenu ul li a {
+    font-size: 1.2em;
+  }
+
+  /* 讓圖片不超出畫面 */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 行動裝置的 padding 縮小一點 */
+  section {
+    padding: 2em 1em;
+  }
+}
+
+/* -------- 平板裝置（768px ~ 1024px）-------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-6 {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  #header h1 {
+    font-size: 2em;
+  }
+
+  #navMenu ul li a {
+    font-size: 1.3em;
+  }
+
+  section {
+    padding: 3em 2em;
+  }
+}
+@media (max-width: 767px) {
+  a {
+    font-size: 1em;
+    word-break: break-word;
+    display: inline-block;
+    padding: 10px 0;
+  }
+
+  .actions.special a.button {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  #navMenu ul li a {
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+  }
+}
