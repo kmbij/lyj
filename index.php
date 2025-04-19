@@ -176,9 +176,7 @@
 
 	<!-- Footer -->
 	<section id="footer">
-		<footer>
-		Copyright ©  林宜潔. All Rights Reserved.
-		</footer>
+		<ul class="copyright"><li>&copy; LYJie</li></ul>
 	</section>
 
 	<!-- Scripts -->
