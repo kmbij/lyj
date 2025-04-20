@@ -1,58 +1,31 @@
-/* -------- 手機版優化（寬度小於768px）-------- */
+/* -------- Learn More 按鈕電腦版向左調整 -------- */
+@media screen and (min-width: 768px) {
+  .mis-button-adjust {
+    margin-left: -160px;
+  }
+}
+
+/* -------- 手機版（寬度小於768px）-------- */
 @media (max-width: 767px) {
-  /* 排版：欄位一欄顯示 */
   .row.gtr-150 {
     display: flex;
     flex-direction: column;
   }
 
-  .col-6,
-  .col-12-medium {
+  .col-6, .col-12-medium {
     width: 100% !important;
     padding: 10px 0;
   }
 
-  /* 文字大小與間距 */
-  p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
-
-  h1 {
+  #header h1 {
     font-size: 1.5em;
   }
 
-  h2,
-  h3 {
-    font-size: 1.4em;
-  }
-
-  /* section padding 調整 */
-  section {
-    padding: 3em 1.5em;
-  }
-
-  /* 圖片置中、不超出畫面 */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .image.fit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* 漢堡按鈕大小 */
   #menuToggle {
     font-size: 1.2em;
     padding: 8px 12px;
   }
 
-  /* 選單樣式 */
   #navMenu {
     position: absolute;
     top: 60px;
@@ -66,23 +39,27 @@
     display: block;
   }
 
-  /* 按鈕樣式 */
-  .actions.special a.button {
-    width: 90%;
-    font-size: 1.1em;
-    margin: 10px auto;
-    display: block;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
-  /* 超連結樣式 */
+  section {
+    padding: 2em 1em;
+  }
+
   a {
     font-size: 1em;
     word-break: break-word;
     display: inline-block;
     padding: 10px 0;
   }
-}
 
+  .actions.special a.button {
+    width: 100%;
+    font-size: 1.1em;
+  }
+}
 
 /* -------- 平板裝置（768px ~ 1024px）-------- */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -101,50 +78,5 @@
 
   section {
     padding: 3em 2em;
-  }
-}
-@media (max-width: 767px) {
-  a {
-    font-size: 1em;
-    word-break: break-word;
-    display: inline-block;
-    padding: 10px 0;
-  }
-
-  .actions.special a.button {
-    width: 100%;
-    font-size: 1.1em;
-  }
-
-  #navMenu ul li a {
-    font-size: 1.2em;
-    padding: 10px;
-    display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  /* 讓按鈕置中 */
-  .actions.special {
-    justify-content: center !important;
-    text-align: center;
-  }
-
-  .actions.special a.button {
-    width: auto;
-    font-size: 1.1em;
-    display: inline-block;
-    margin: 1em auto;
-  }
-
-  /* 修正 section padding & overflow */
-  section {
-    padding: 2em 1em;
-    overflow-x: hidden;
-  }
-
-  /* 預防文字被裁切 */
-  p, h2, h3 {
-    word-break: break-word;
   }
 }
